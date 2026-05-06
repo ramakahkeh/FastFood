@@ -417,6 +417,14 @@ section {
 .page-transition {
     animation: fadeSlide 0.7s ease-out;
 }
+.yellow-link {
+    color: #ffcc00;          
+    font-size: 24px;         
+    font-weight: bold;      
+    text-decoration: none;  
+    font-family: Arial, sans-serif; 
+    margin-top: 20px;
+}
 
 @keyframes fadeSlide {
     from {
