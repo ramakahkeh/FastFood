@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.AboutUs-page {
+    background-color: #222;
+    margin: 0%;
+    padding: 0%;
+}
+/* ===== students section ===== */
+.students-section {
+    padding: 60px 20px;
+    text-align: center;
+    color: rgb(146, 120, 120);
+}
+
+.students-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.students-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.student-card {
+    background: rgba(242, 245, 220, 0.608);
+    width: 240px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.student-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #af9804;
+}
+
+.student-card .id {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.student-card .ar-name {
+    font-size: 17px;
+    color: #222;
+    font-weight: 600;
+}
+
+/* ===== hero ===== */
+.hero-section {
+    width: auto;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.hero {
+    position: relative;
+    width: fit-content;
+}
+
+.hero-title {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    font-size: 7vw;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* ===== top bar ===== */
+.logo {
+    width: 30px;
+    height: 30px;
+    background: white;
+    padding: 4px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgb(0,0,0,0.2);
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.menu a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+/* ===== white section ===== */
+.white-section {
+    background: #fff;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.white-image img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.2));
+}
+
+.white-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.white-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(40px, 6vw, 70px);
+    color: #666;
+    margin-bottom: 20px;
+    direction: rtl;
+    text-align: center;
+}
+
+.white-text {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.7;
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===== meals ===== */
+.meals-section {
+    padding: 100px 30px;
+    background: #fff;
+    direction: rtl;
+}
+
+.meals-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.meals-table th,
+.meals-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.meals-table th {
+    background: #ffbe33;
+    color: white;
+}
+
+.details-row {
+    display: none;
+    background: #f9f9f9;
+}
+
+.meal-img {
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===== footer ===== */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 60px ;
+    margin-top: 60px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.footer-box {
+    text-align: center;
+    max-width: 500px;
+}
+
+.footer-box h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #ffbe33;
+    margin-bottom: 12px;
+}
+
+.footer-box p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 4px 0;
+}
+
+.copy {
+    margin-top: 40px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #ffbe33;
+    color: #fff;
+}
+
+.hover-yellow {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hover-yellow:hover {
+    color: #ffbe33;
+}
+.meal-details {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    text-align: right;
+}
+
+.meal-info {
+    flex: 1;
+}
+
+.meal-info ul {
+    margin: 10px 20px;
+    line-height: 1.8;
+}
+.table-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+
+
+
+.continue-btn{
+    padding: 12px 25px;
+    background: #ffbe33;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.result-box {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: right;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+
+.result-box h3 {
+    color: #2ecc71;
+    margin-bottom: 15px;
+}
+
+.result-box p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.result-box hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.result-box .total {
+    font-weight: bold;
+    color: #333;
+}
+
+.result-box .final {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+#orderFormContainer {
+    max-width: 500px;
+    width: 95%;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#orderFormContainer h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#orderForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#orderForm input:focus {
+    border-color: #f4b42a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(244,180,42,0.5);
+}
+
+#orderForm button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #f4b42a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#orderForm button:hover {
+    background: #d9991f;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-transition {
+    animation: fadeSlide 0.7s ease-out;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
